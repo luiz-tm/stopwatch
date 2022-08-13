@@ -15,7 +15,7 @@ body {
 
 .container {
     max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.717);
+    background-color: white;
     margin: 100px auto;
     border-radius: 8px;
     padding: 50px;
