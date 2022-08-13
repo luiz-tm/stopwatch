@@ -1,0 +1,27 @@
+@media (max-width: 870px)
+{
+    footer {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 735px)
+{
+    footer {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 632px)
+{
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 560px)
+{
+    footer {
+        font-size: 0.8rem;
+    }
+}
