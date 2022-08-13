@@ -10,5 +10,5 @@
 - Utilizado Code Organization.
 
 ## Imagens
-<img src="media/github/stopwatch" alt="Projeto em andamento"/>
-<img src="media/github/paused-stopwatch" alt="Projeto em andamento"/>
+<img src="media/github/stopwatch.png" alt="Projeto em andamento"/>
+<img src="media/github/paused-stopwatch.png" alt="Projeto em andamento"/>
