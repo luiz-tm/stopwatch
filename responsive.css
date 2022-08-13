@@ -25,12 +25,3 @@
         font-size: 0.8rem;
     }
 }
-
-@media (max-width: 400px)
-{
-    .container {
-        margin-top: 0px;
-        border-radius: 0px;
-        padding: 30px;
-    }
-}
