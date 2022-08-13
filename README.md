@@ -10,5 +10,5 @@
 - Utilizado Code Organization.
 
 ## Imagens
-![Projeto rodando]('stopwatch.png')
-![Projeto rodando]('paused-stopwatch.png')
+![Projeto rodando]('https://raw.githubusercontent.com/luiz-tm/stopwatch/main/media/github/stopwatch.PNG')
+![Projeto rodando]('https://raw.githubusercontent.com/luiz-tm/stopwatch/main/media/github/paused-stopwatch.PNG')
