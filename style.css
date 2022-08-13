@@ -8,14 +8,14 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0,0,0,0.85)), url('media/background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('media/background.jpg');
     min-width: 320px;
     background-attachment: cover;
 }
 
 .container {
     max-width: 400px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.717);
     margin: 100px auto;
     border-radius: 8px;
     padding: 50px;
@@ -69,6 +69,7 @@ body {
     margin-right: 20px;
     font-size: 1rem;
     font-weight: 600;
+    transition: background-color 0.2s ease;
 }
 
 .btn button:last-child {
@@ -78,6 +79,10 @@ body {
 .btn button:nth-child(1) { background-color: rgb(49, 143, 40); }
 .btn button:nth-child(2) { background-color: rgb(96, 96, 223); }
 .btn button:nth-child(3) { background-color: rgb(238, 75, 75); }
+
+.btn button:nth-child(1):hover { background-color: rgb(36, 100, 31); }
+.btn button:nth-child(2):hover { background-color: rgb(59, 59, 141); }
+.btn button:nth-child(3):hover { background-color: rgb(135, 46, 46); }
 
 footer {
     font-size: 1.5rem;
