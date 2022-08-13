@@ -54,7 +54,7 @@ const App = () =>
                 if(getSecond() === 60)
                 {
                     setSecond(0);
-                    if(getMinute() < 59) { setMinute(minute + 1); }
+                    if(getMinute() < 59) { setMinute(getMinute() + 1); }
                     else 
                     {
                         setHour(getHour() + 1);
