@@ -40,7 +40,6 @@ const fixNumber = (number) => number < 10 ? `0${number}` : number;
 const updateTimer = () => timer.innerHTML = `${fixNumber(hour)}:${fixNumber(minute)}:${fixNumber(second)}`
 //
 
-// Application
 const App = () =>
 {
     pause.addEventListener('click', () => stopApp() )
@@ -88,6 +87,5 @@ const App = () =>
         updateTimer()
     }
 }
-//
 
 App();
