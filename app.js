@@ -42,33 +42,43 @@ const updateTimer = () => timer.innerHTML = `${fixNumber(hour)}:${fixNumber(minu
 
 const App = () =>
 {
-    pause.addEventListener('click', () => stopApp() )
-    clear.addEventListener('click', () => stopApp(true) )
-
-    start.addEventListener('click', () => {
-        if(getRunningStatus() === false)
+    document.addEventListener('click', (e) => {
+        switch(e.target)
         {
-            timerUpdate = setInterval(() => {
-                setSecond(getSecond() + 1);
-        
-                if(getSecond() === 60)
+            case pause: // Pause
+                stopApp();
+            break;
+
+            case clear: // Clear
+                stopApp(true);
+            break;
+
+            case start: // Start
+                if(getRunningStatus() === false)
                 {
-                    setSecond(0);
-                    if(getMinute() < 59) { setMinute(getMinute() + 1); }
-                    else 
-                    {
-                        setHour(getHour() + 1);
-                        setMinute(0);
-                    }
-                }
+                    timerUpdate = setInterval(() => {
+                        setSecond(getSecond() + 1);
                 
-                updateTimer();
-            }, defaultTimer)
-            setRunningStatus(true);
-            hidePauseStatus()
+                        if(getSecond() === 60)
+                        {
+                            setSecond(0);
+                            if(getMinute() < 59) { setMinute(getMinute() + 1); }
+                            else 
+                            {
+                                setHour(getHour() + 1);
+                                setMinute(0);
+                            }
+                        }
+                        
+                        updateTimer();
+                    }, defaultTimer)
+                    setRunningStatus(true);
+                    hidePauseStatus()
+                }
+            break;
         }
     })
-
+    
     const stopApp = (clearButton = false) =>
     {
         switch(clearButton)
