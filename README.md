@@ -1,4 +1,7 @@
 # StopWatch
+
+# Rode o projeto
+<a hred="https://luiz-tm.github.io/stopwatch/">Clique aqui para rodar o projeto.</a>
  
 ## Introdução
 - Um simples cronômetro criado para treinar meus conhecimentos em desenvolvimento web.
